@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="IMG/logoazul.png"></a>
+            <div class="logo-name">
+                <h1>Recovery4You</h1>
+                <p1>Moving for a Betther Health</p1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Interface</a></li>
+                        <li><a href="">User Experience</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul> 
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-Box">
+            <h1>Stay active even if you're injured</h1>
+            <p>Our website is the best for you to keep track of your trainings and taking care
+            of your health during an injury.<br> Providing several adaptive exercises with customize tools given buy
+            our network.
+            </p>
+            <a href="LoginPage.html" class="hero-btn">Sign Up to Be Appart</a>
+        </div>
+
+    </section>
+
+    <!-------- Services -------->
+
+    <section class="services">
+        <h1>Services We Offer</h1>
+        <p>Here you can See what services we offer and the perks that it can bring to you and your health</p>
+
+        <div class="row">
+            <div class="Service-col">
+                <h3>User</h3>
+                <p1>asjfdhakfjhaksj</p1>
+            </div>
+            <div class="Service-col">
+                <h3>Enterprise</h3>
+                <p1>asjfdhakfjhaksj</p1>
+            </div>
+            <div class="Service-col">
+                <h3>Clinic</h3>
+                <p1>asjfdhakfjhaksj</p1>
+            </div>
+        </div>
+    </section>
+
+    <!-------- interface ------>
+
+    <section class="interface">
+        <h1>Our Interface</h1>
+        <p>Here you will be able to check some functions of what you will have access, to learn more don't forget to <a href="LoginPage.html" class="register">SignUp</a></p>
+
+        <div class="row">
+            <div class="interface-col">
+                <img src="./IMG/Imagem Clinica.png">
+                <div class="layer">
+                    <h5>Clinic</h5>
+                </div>
+            </div>
+            <div class="interface-col">
+                <img src="./IMG/Imagem empresa.png">
+                <div class="layer">
+                    <h5>Enterprise</h5>
+                </div>
+            </div>
+            <div class="interface-col">
+                <img src="./IMG/Imagem User.png">
+                <div class="layer">
+                    <h5>User</h5>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-------- User Experience --------->
+
+    <section class="testimonials">
+        <h1>What Our User Says</h1>
+        <p>Here you can find user feedback about our interface</p>
+
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="./IMG/imagem1.jpeg">
+                <div>
+                    <p>rtyuiolk,myfgiuafhoijfos</p>
+                    <h3>Client Name</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="./IMG/Foto fato.jpg">
+                <div>
+                    <p>rtyuiolk,myfgiuafhoijfos</p>
+                    <h3>Client Name</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!------ Call to Action ------>
+
+    <section class="cta">
+        <h1>Any Question<br>Anywhere From The World</h1>
+        <a href="" class="sup-btn">Contact Us</a>
+    </section>
+
+    <!------ Footer ------>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>yiufus9fusiudfhisudhfisudhfisduhfsidufhsiudfhisudhfsiudfhisudf</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made With <i class="fa fa-heart-o"></i> Group 6</p>
+    </section>
+
+ <!-------- JavaScript for Toogle Menu ----------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>

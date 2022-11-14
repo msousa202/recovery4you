@@ -1,0 +1,4 @@
+100% 	#0099cc	rgb(0, 153, 204)	hsl(195, 100%, 40%) - Azul leve
+100% 	#00cc99	rgb(0, 204, 153)	hsl(165, 100%, 40%) - Verde leve
+100% 	#cc6600	rgb(204, 102, 0)	hsl(30, 100%, 40%) - Laranja leve
+100% 	#cc0033	rgb(204, 0, 51)	hsl(345, 100%, 40%) - vermelho leve
