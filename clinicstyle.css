@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    min-height: 80px;
+    width: 100%;
+    background-image: linear-gradient(rgba(10, 154, 162, 0.7),rgba(31, 47, 111, 0.7)), url(IMG/Background.jpg);
+    position: fixed;
+}
+
+/* Nav Class */
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 70px;
+}
+
+.logo-name h1{
+    margin-left: 20px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.logo-name p1{
+    margin-left: 10px;
+    color: gainsboro;
+    font-size: 16px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: whitesmoke;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    background-image: url(IMG/);
+}
+

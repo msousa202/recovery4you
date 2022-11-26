@@ -44,7 +44,7 @@ nav img {
     font-size: 20px;
 }
 .logo-name p1{
-    margin-left: 20px;
+    margin-left: 10px;
     color: gainsboro;
     font-size: 16px;
 }
@@ -344,6 +344,34 @@ h3{
     padding: 0;
 }
 
+/*Hero Btn2 */
+
+.hero-btn2{
+    margin-bottom: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid #fff;
+    padding: 11px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.hero-btn2:hover{
+    border: 1px solid #04989E;
+    background: #04989E;
+    transition: 0.5s;
+}
+
+/* Secions */
+
+name{
+    transition: .5s;
+}
+
 /* Hero Btn */
 
 .hero-btn{
@@ -419,6 +447,34 @@ h3{
     color: #f44336;
 }
 
-/* Login Page */
+@media(max-width: 700px){
+    .footer{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 65px;
+    }
+    
+    .footer h4{
+        margin-bottom: 25px;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+    
+    .footer p{
+        color: gray;
+        width: 100%;
+    }
+    
+    .icons .fa{
+        color: #0099cc;
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+    }
+    
+    .fa-heart-o{
+        color: #f44336;
+    }
+}
 
 
