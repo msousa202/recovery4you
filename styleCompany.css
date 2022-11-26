@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: cadetblue;
+}
+ /*NAVBAR*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 40px;
+}
+
+nav img {
+    width: 70px;
+}
+
+.logo-name h1{
+    margin-left: 20px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.logo-name p1{
+    margin-left: 10px;
+    color: gainsboro;
+    font-size: 16px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: whitesmoke;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/*ADD EQUIPMENTS*/
+.addequipcontent{
+    width: 100%;
+    position: absolute;
+    top: 13%;
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase; 
+}
+
+.addequipformbox{
+    width: 380px;
+    height: 400px;
+    position: relative;
+    margin: 3% auto;
+    background:transparent;
+    padding: 5px;
+    border: 2px solid whitesmoke;
+    bottom: 0;
+    left: 0;  
+}
+
+.addequipformbox h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    margin-top: 20px;
+    font-size: 25px;
+
+}
+
+.addequipformbox form{
+    padding: 0 40px;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+form .txt-field11{
+    position: relative;
+    border-bottom: 1.5px solid whitesmoke;
+    margin: 30px 0;
+    margin-top: 3px;
+
+} 
+
+.txt-field11 input{
+    width: 100%;
+    padding: 0 5px;
+    height: 0px;
+    font-size: 12px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt-field11 label{
+    position: absolute;
+    top: 40%;
+    left: 5px;
+    color: whitesmoke;
+    transform: translateY(-50%);
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.txt-field11 span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #FF914D;
+    font-weight: bold;
+}
+
+.txt-field11 input:focus ~label,
+.txt-field11 input:valid ~label{
+    top: -5px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.txt-field11 input:focus ~span::before,
+.txt-field11 input:valid ~span::before{
+    width: 100%;
+}
+
+input[type="submit11"]{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    border: 1.5px solid whitesmoke;
+    background: transparent;
+    border-radius: 25px;
+    font-size: 16px;
+    text-align: center;
+    color: aliceblue;
+    font-weight: 550;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit11"]:hover{
+    border-color: rgb(50, 84, 85);
+    color: rgb(50, 84, 85);
+    transition: 0.3s;
+}
+
+/*PROFILE*/
+.profilecontent{
+    width: 100%;
+    position: absolute;
+    top: 13%;
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase; 
+}
+
+.profileformbox{
+    width: 380px;
+    height: 400px;
+    position: relative;
+    margin: 3% auto;
+    background: transparent;
+    padding: 5px;
+    border: 2px solid whitesmoke;
+    bottom: 0;
+    left: 0;  
+}
+
+.profileformbox h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    margin-top: 20px;
+    font-size: 25px;
+
+}
+
+.profileformbox form{
+    padding: 0 40px;
+    margin-top: 70px;
+    box-sizing: border-box;
+}
+
+form .txt-field11{
+    position: relative;
+    border-bottom: 1.5px solid whitesmoke;
+    margin: 30px 0;
+    margin-top: 15px;
+} 
+
+form .addequipoptionbox{
+    width: 100%;
+    height: 20px;
+    margin-top: 15px;
+    border: 1.5px solid whitesmoke;
+    text-align: center;
+}
+
+.txt-field11 input{
+    width: 100%;
+    padding: 0 5px;
+    height: 0px;
+    font-size: 12px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt-field11 label{
+    position: absolute;
+    top: 40%;
+    left: 5px;
+    color: whitesmoke;
+    transform: translateY(-50%);
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.txt-field11 span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: whitesmoke;
+    font-weight: bold;
+}
+
+.txt-field11 input:focus ~label,
+.txt-field11 input:valid ~label{
+    top: -5px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.txt-field11 input:focus ~span::before,
+.txt-field11 input:valid ~span::before{
+    width: 100%;
+}
+
+input[type="submit12"]{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    border-radius: 25px;
+    font-size: 16px;
+    text-align: center;
+    color: aliceblue;
+    font-weight: 550;
+    cursor: pointer;
+    outline: none;
+    margin-top: 40px;
+}
+
+input[type="submit12"]:hover{
+    border-color: rgb(50, 84, 85);
+    color: rgb(50, 84, 85);
+    transition: 0.3s;
+}
+
+
