@@ -1,12 +1,5 @@
 <?php
-
-    include('config.php');
-
-    $query = "SELECT * FROM registration";
-    $result = mysqli_query($connection, $query);
-    $total = mysqli_num_rows($result);
-    $bv = mysqli_fetch_assoc($result)
-
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -20,8 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styleCompany.css">
-
-    <title>Homepage</title>
+    <title>Profile</title>
 </head>
 <body>
     <section class="header">
@@ -38,41 +30,36 @@
                     <ul>
                         <li><a href="EnterpriseAddEquipment.php">Add Equipment</a></li>
                         <li><a href="EnterpriseHistoric.php">Historic</a></li>
-                        <li><a href="EnterpriseProfile.php">Profile</a></li>
                         <li><a href="EnterpriseContactPage.php">Contact Us</a></li>
                         <li><a href="LoginPage.html">Log Out</a></li>
                     </ul> 
             </div>
         </nav>
-        <div class="text-Box">
-            
-            
+        <div class="border">
+            <div class="profile-box">
+                <img src="IMG/images/menu.png" class="menu-icon">
+                <img src="IMG/images/setting.png" class="setting-icon">
+                <img src="IMG/images/profile-pic.png" class="profile-pic">
+                
+                <h3>Clinic Name</h3>
+                <p>Email adress</p>
 
-            <h1><?php echo "Wellcome ".$bv['email']; ?></h1>
 
-        
+                <a href="ProfileEnterpriseEditProfile.php" class="sup-btn"> Edit Profile</a>
+                
 
-            <p>Our website is the best for you to keep track of your trainings and taking care
-            of your health during an injury.<br> Providing several adaptive exercises with customize tools given buy
-            our network.
-            </p>
-            <a href="LoginPage.html" class="hero-btn">Sign Up to Be Appart</a>
+                
+            </div>
+            <div class="profile-box">
+                
+                <h3>Services that we display</h3>
+                <table class="Serviços">
+
+                </table>
+            </div>
         </div>
-
     </section>
-
-    <script>
-        var navLinks = document.getElementById("navLinks");
-
-        function showMenu(){
-            navLinks.style.right = "0";
-        }
-
-        function hideMenu(){
-            navLinks.style.right = "-200px";
-        }
-
-    </script>
-
+    
+    
 </body>
 </html>

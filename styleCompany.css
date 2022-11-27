@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: cadetblue;
 }
+
+
  /*NAVBAR*/
-nav{
+ nav{
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
@@ -58,6 +59,93 @@ nav img {
 
 .nav-links ul li:hover::after{
     width: 100%;
+}
+
+/* profile */
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#4ca1af,#c4e0e5);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.border{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.profile-box{
+    width: 1280px;
+    height: 680px;
+    background: gainsboro;
+    top: 35px;
+    text-align: center;
+    padding: 40px 90px;
+    color: black;
+    position: relative;
+    border-radius: 20px;
+    display:inline-block;
+    margin: 20px;
+    
+}
+
+.menu-icon{
+    width: 40px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+.setting-icon{
+    width: 40px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.profile-pic{
+    width: 320px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    position: flex;
+    padding: 5px;
+    margin-top: 80px;
+}
+
+.profile-box h3{
+    font-size: 34px;
+    padding: 15px;
+}
+
+.profile-box p{
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.sup-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.sup-btn:hover{
+    border: 2px solid #c4e0e5;
+    background: #4ca1af;
+    transition: 0.5s;
 }
 
 /*ADD EQUIPMENTS*/
@@ -168,120 +256,27 @@ input[type="submit11"]:hover{
     transition: 0.3s;
 }
 
-/*PROFILE*/
-.profilecontent{
-    width: 100%;
-    position: absolute;
-    top: 13%;
-    text-align: center;
-    color: whitesmoke;
-    text-transform: uppercase; 
-}
+/* Index Enterprise Page */
 
-.profileformbox{
-    width: 380px;
-    height: 400px;
-    position: relative;
-    margin: 3% auto;
-    background: transparent;
-    padding: 5px;
-    border: 2px solid whitesmoke;
-    bottom: 0;
-    left: 0;  
-}
-
-.profileformbox h1{
-    text-align: center;
-    padding: 0 0 20px 0;
-    margin-top: 20px;
-    font-size: 25px;
-
-}
-
-.profileformbox form{
-    padding: 0 40px;
-    margin-top: 70px;
-    box-sizing: border-box;
-}
-
-form .txt-field11{
-    position: relative;
-    border-bottom: 1.5px solid whitesmoke;
-    margin: 30px 0;
-    margin-top: 15px;
-} 
-
-form .addequipoptionbox{
-    width: 100%;
-    height: 20px;
-    margin-top: 15px;
-    border: 1.5px solid whitesmoke;
-    text-align: center;
-}
-
-.txt-field11 input{
-    width: 100%;
-    padding: 0 5px;
-    height: 0px;
-    font-size: 12px;
-    border: none;
-    background: none;
-    outline: none;
-}
-
-.txt-field11 label{
-    position: absolute;
-    top: 40%;
-    left: 5px;
-    color: whitesmoke;
-    transform: translateY(-50%);
-    font-size: 14px;
-    pointer-events: none;
-}
-
-.txt-field11 span::before{
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: whitesmoke;
-    font-weight: bold;
-}
-
-.txt-field11 input:focus ~label,
-.txt-field11 input:valid ~label{
-    top: -5px;
-    color: whitesmoke;
-    font-weight: bold;
-}
-
-.txt-field11 input:focus ~span::before,
-.txt-field11 input:valid ~span::before{
-    width: 100%;
-}
-
-input[type="submit12"]{
-    width: 100%;
-    height: 30px;
-    margin-top: 20px;
-    border: 1px solid whitesmoke;
-    background: transparent;
-    border-radius: 25px;
-    font-size: 16px;
-    text-align: center;
+.text-Box{
+    width: 90%;
     color: aliceblue;
-    font-weight: 550;
-    cursor: pointer;
-    outline: none;
-    margin-top: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
 }
 
-input[type="submit12"]:hover{
-    border-color: rgb(50, 84, 85);
-    color: rgb(50, 84, 85);
-    transition: 0.3s;
+.text-Box h1{
+    font-size: 48px;
 }
+
+.text-Box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: aliceblue;
+}
+
 
 
