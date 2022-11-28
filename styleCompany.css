@@ -87,6 +87,7 @@ nav img {
     border: 2px solid black;
     color: black;
     border-radius: 20px;
+    margin-top: 10px;
 }
 
 .profile-box-3 h3{
@@ -103,7 +104,7 @@ nav img {
 .profile-box-2{
     width: 620px;
     height: 480px;
-    background: rgb(211, 201, 201);
+    background: gainsboro;
     color: black;
     position: relative;
     border-radius: 20px; 
@@ -204,15 +205,13 @@ nav img {
 
 .addequipformbox h1{
     text-align: center;
-    padding: 0 0 20px 0;
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 24px;
 
 }
 
 .addequipformbox form{
-    padding: 0 40px;
-    margin-top: 15px;
+    padding: 0 100px;
     box-sizing: border-box;
 }
 
@@ -220,8 +219,8 @@ form .txt-field11{
     width: auto;
     justify-content: center;
     position: relative;
-    border-bottom: 1.5px solid black;
-    margin: 40px 0;
+    border: 1.5px solid black;
+    margin: 20px 0;
 
 } 
 
@@ -241,7 +240,7 @@ form .txt-field11{
     left: 5px;
     color: black;
     transform: translateY(-50%);
-    font-size: 14px;
+    font-size: 12px;
     pointer-events: none;
 }
 
@@ -342,7 +341,7 @@ nav .fa{
     background: black;
     padding: 3px;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 .upload-photo{

@@ -37,7 +37,6 @@
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="EnterpriseAddEquipment.php">Add Equipment</a></li>
-                        <li><a href="EnterpriseHistoric.php">Historic</a></li>
                         <li><a href="EnterpriseProfile.php">Profile</a></li>
                         <li><a href="EnterpriseContactPage.php">Contact Us</a></li>
                         <li><a href="LoginPage.html">Log Out</a></li>
