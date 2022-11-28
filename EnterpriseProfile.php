@@ -1,5 +1,12 @@
 <?php
-session_start();
+
+    include('config.php');
+
+    $query = "SELECT * FROM registration";
+    $result = mysqli_query($connection, $query);
+    $total = mysqli_num_rows($result);
+    $bv = mysqli_fetch_assoc($result)
+
 ?>
 
 <!DOCTYPE html>
@@ -14,6 +21,7 @@ session_start();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styleCompany.css">
     <title>Profile</title>
+    <script src="https://kit.fontawesome.com/931a34611b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="header">
@@ -29,33 +37,29 @@ session_start();
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="EnterpriseAddEquipment.php">Add Equipment</a></li>
-                        <li><a href="EnterpriseHistoric.php">Historic</a></li>
                         <li><a href="EnterpriseContactPage.php">Contact Us</a></li>
                         <li><a href="LoginPage.html">Log Out</a></li>
                     </ul> 
             </div>
         </nav>
         <div class="border">
-            <div class="profile-box">
-                <img src="IMG/images/menu.png" class="menu-icon">
-                <img src="IMG/images/setting.png" class="setting-icon">
+            <div class="profile-box-2">
+                <a href=""><img src="IMG/images/menu.png" class="menu-icon"></a>
+                <a href="EnterpriseProfileEdit.php"><img src="IMG/images/setting.png" class="setting-icon"></a>
                 <img src="IMG/images/profile-pic.png" class="profile-pic">
                 
                 <h3>Clinic Name</h3>
-                <p>Email adress</p>
-
-
-                <a href="ProfileEnterpriseEditProfile.php" class="sup-btn"> Edit Profile</a>
-                
-
-                
+                <p><i class="fas fa-envelope "></i> <?php echo $bv['email']; ?></p>   
+                <p><i class="fas fa-phone-square-alt"></i> Clinc Contact</p>
+                <a href="EnterpriseProfileEdit.php" class="sup-btn"> Edit Profile</a>
+    
             </div>
-            <div class="profile-box">
-                
-                <h3>Services that we display</h3>
-                <table class="Serviços">
+            <div class="profile-box-2">
+                <h3>Enterprise Equipment</h3>
+                <div class="profile-box-3">
 
-                </table>
+                </div>
+                
             </div>
         </div>
     </section>

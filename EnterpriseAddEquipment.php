@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Equipments</title>
+    <title>Equipment Page</title>
     <link rel="stylesheet" href="styleCompany.css">
 </head>
 <body>
@@ -20,65 +20,77 @@
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="EnterpriseHistoric.php">Historic</a></li>
                         <li><a href="EnterpriseProfile.php">Profile</a></li>
                         <li><a href="EnterpriseContactPage.php">Contact Us</a></li>
                         <li><a href="LoginPage.html">Log Out</a></li>
                     </ul> 
             </div>
         </nav>
+        <div class="border">
+            <div class="profile-box">
 
-        <section class="AddEquipment">
-            <div class="addequipcontent">
-                <div class="addequipformbox">
-                    <h1>Add a new equipment</h1>
-                    <form method="post">
-                        <div class="txt-field11">
-                            <input type="text" required>
-                            <label>Name</label>
-                        </div>
-                        <div class="txt-field11">
-                            <input type="text" required>
-                            <label>Description</label>
-                        </div>
-                        <div class="txt-field11">
-                            <input type="url" required>
-                            <label>URL Link</label>
-                        </div>
-                        <select class="addequipoptionbox" name="format">
-                            <option selected>Type of injury</option>
-                            <option value="Osseous">Osseous</option>
-                            <option value="Muscular">Muscular</option>
-                            <option value="Tendinous">Tendinous</option>
-                            <option value="Ligamentous">Ligamentous</option>
-                        </select>
-                        <select class="addequipoptionbox" name="format">
-                            <option selected>Body Part</option>
-                            <option value="Upper Body">Upper Body</option>
-                            <option value="Lower Body">Lower Body</option>
-                        </select>
-                        <select class="addequipoptionbox" name="format">
-                            <option selected>Member</option>
-                            <option value="Shoulder">Shoulder</option>
-                            <option value="Arm">Arm</option>
-                            <option value="Forearm">Forearm</option>
-                            <option value="Wrist">Wrist</option>
-                            <option value="Hand">Hand</option>
-                            <option value="Arm">Arm</option>
-                            <option value="Hip">Hip</option>
-                            <option value="Thigh">Thigh</option>
-                            <option value="Knee">Knee</option>
-                            <option value="Leg">Leg</option>
-                            <option value="Ankle">Ankle</option>
-                            <option value="Foot">Foot</option>
-                        </select>
+                <div class="addequipcontent">
+                    <div class="addequipformbox">
+                        <h1>Add a new equipment</h1>
+                        <form method="post">
+                            <div class="txt-field11">
+                                <input type="text" required>
+                                <label>Item Name</label>
+                            </div>
+                            <div class="txt-field11">
+                                <input type="text" required>
+                                <label>Description of item</label>
+                            </div>
+                            <div class="txt-field11">
+                                <input type="url" required>
+                                <label>URL Link</label>
+                            </div>
+                            <select class="addequipoptionbox" name="format">
+                                <option selected>Type of injury</option>
+                                <option value="Osseous">Osseous</option>
+                                <option value="Muscular">Muscular</option>
+                                <option value="Tendinous">Tendinous</option>
+                                <option value="Ligamentous">Ligamentous</option>
+                            </select>
+                            <select class="addequipoptionbox" name="format">
+                                <option selected>Body Part</option>
+                                <option value="Upper Body">Upper Body</option>
+                                <option value="Lower Body">Lower Body</option>
+                            </select>
+                            <select class="addequipoptionbox" name="format">
+                                <option selected>Member</option>
+                                <option value="Shoulder">Shoulder</option>
+                                <option value="Arm">Arm</option>
+                                <option value="Forearm">Forearm</option>
+                                <option value="Wrist">Wrist</option>
+                                <option value="Hand">Hand</option>
+                                <option value="Arm">Arm</option>
+                                <option value="Hip">Hip</option>
+                                <option value="Thigh">Thigh</option>
+                                <option value="Knee">Knee</option>
+                                <option value="Leg">Leg</option>
+                                <option value="Ankle">Ankle</option>
+                                <option value="Foot">Foot</option>
+                            </select><br>
+                            
+                            <form action="/action_page.php">
+
+                                <img src="" class="item-pic"><a href=""></a><br>
+
+                                <input type="file" id="myFile" name="filename" class="upload-photo">
                     
-                        <input type="submit11" value="Save Changes">
-        
-                    </form>
+                            </form>
+
+                            <input type="submit11" value="Add Equipment">
+            
+                        </form>
+                    </div>
                 </div>
+        
             </div>
-        </section>
+        </div>
+        
     </section>
+
 </body>
 </html>

@@ -24,7 +24,7 @@
     <title>Homepage</title>
 </head>
 <body>
-    <section class="header">
+    <section class="header-1">
         <nav>
             <a href="indexEnterprise.php"><img src="IMG/logoPrincipalBranco.png"></a>
 
@@ -53,10 +53,8 @@
         
 
             <p>Our website is the best for you to keep track of your trainings and taking care
-            of your health during an injury.<br> Providing several adaptive exercises with customize tools given buy
-            our network.
+            of your health during an injury.<br> Here you will be able to promote your equipment such as your enterprise link when an user is injured.
             </p>
-            <a href="LoginPage.html" class="hero-btn">Sign Up to Be Appart</a>
         </div>
 
     </section>

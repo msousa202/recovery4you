@@ -73,59 +73,97 @@ nav img {
 }
 
 .border{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
     text-align: center;
-    display: flex;
-    align-items: center;
-    margin: 20px;
+}
 
+.profile-box-3{
+    width: 520px;
+    height: 400px;
+    display: inline-block;
+    background: transparent;
+    border: 2px solid black;
+    color: black;
+    border-radius: 20px;
+}
+
+.profile-box-3 h3{
+    font-size: 24px;
+    padding: 10px;
+}
+
+.profile-box-3 p{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+.profile-box-2{
+    width: 620px;
+    height: 480px;
+    background: rgb(211, 201, 201);
+    color: black;
+    position: relative;
+    border-radius: 20px; 
+    padding: 30px 10px;
+    margin: 20px;
+}
+
+.profile-box-2 h3{
+    font-size: 24px;
+    padding: 10px;
+}
+
+.profile-box-2 p{
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
 .profile-box{
-    width: 1280px;
-    height: 680px;
+    width: 600px;
+    height: auto;
     background: gainsboro;
-    top: 35px;
-    text-align: center;
-    padding: 40px 90px;
+    padding: 20px 20px;
     color: black;
-    position: relative;
     border-radius: 20px;
-    display:inline-block;
-    margin: 20px;
+    position: relative;
+    display: inline-block;
     
 }
 
 .menu-icon{
-    width: 40px;
+    width: 25px;
     position: absolute;
     left: 40px;
     top: 40px;
 }
 
 .setting-icon{
-    width: 40px;
+    width: 25px;
     position: absolute;
     right: 40px;
     top: 40px;
 }
 
 .profile-pic{
-    width: 320px;
+    width: 180px;
     border-radius: 50%;
     background: #fff;
     text-align: center;
     position: flex;
     padding: 5px;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .profile-box h3{
-    font-size: 34px;
+    font-size: 24px;
     padding: 15px;
 }
 
 .profile-box p{
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 25px;
 }
 
@@ -150,24 +188,18 @@ nav img {
 
 /*ADD EQUIPMENTS*/
 .addequipcontent{
-    width: 100%;
-    position: absolute;
-    top: 13%;
+    position: relative;
     text-align: center;
-    color: whitesmoke;
-    text-transform: uppercase; 
+    color: black;
+    text-transform: capitalize;
+    padding: 5px; 
 }
 
 .addequipformbox{
-    width: 380px;
-    height: 400px;
     position: relative;
-    margin: 3% auto;
-    background:transparent;
-    padding: 5px;
-    border: 2px solid whitesmoke;
-    bottom: 0;
-    left: 0;  
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 20px;
 }
 
 .addequipformbox h1{
@@ -185,10 +217,11 @@ nav img {
 }
 
 form .txt-field11{
+    width: auto;
+    justify-content: center;
     position: relative;
-    border-bottom: 1.5px solid whitesmoke;
-    margin: 30px 0;
-    margin-top: 3px;
+    border-bottom: 1.5px solid black;
+    margin: 40px 0;
 
 } 
 
@@ -206,7 +239,7 @@ form .txt-field11{
     position: absolute;
     top: 40%;
     left: 5px;
-    color: whitesmoke;
+    color: black;
     transform: translateY(-50%);
     font-size: 14px;
     pointer-events: none;
@@ -236,23 +269,25 @@ form .txt-field11{
 }
 
 input[type="submit11"]{
-    width: 100%;
+    width: 50%;
     height: 30px;
-    margin-top: 20px;
-    border: 1.5px solid whitesmoke;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1.5px solid black;
     background: transparent;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
-    color: aliceblue;
+    color: black;
     font-weight: 550;
     cursor: pointer;
     outline: none;
+
 }
 
 input[type="submit11"]:hover{
-    border-color: rgb(50, 84, 85);
-    color: rgb(50, 84, 85);
+    border-color: gray;
+    color: gray;
     transition: 0.3s;
 }
 
@@ -269,14 +304,57 @@ input[type="submit11"]:hover{
 }
 
 .text-Box h1{
-    font-size: 48px;
+    font-size: 56px;
+    color: #053361;
+    font-style: bold;
 }
 
 .text-Box p{
     margin: 10px 0 40px;
-    font-size: 14px;
-    color: aliceblue;
+    font-size: 24px;
+    color: rgb(60, 68, 76);
+}
+
+nav .fa{
+    display: none;
+}
+
+/* background image to index enterprise */
+
+.header-1{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#4ca1af,#c4e0e5);
+    background-size: cover;
+    background-position: center;
+    
 }
 
 
+/* Add equipment */
 
+.item-pic{
+    content: url(./IMG/images/profile-pic.png);
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 120px;
+    border-radius: 20%;
+    background: black;
+    padding: 3px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.upload-photo{
+    top: 5px;
+    position: relative;
+    padding: 5px;
+}
+
+.addequipoptionbox{
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-left: 4px;
+    margin-right: 4px;
+}
