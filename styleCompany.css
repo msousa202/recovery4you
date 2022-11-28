@@ -61,6 +61,14 @@ nav img {
     width: 100%;
 }
 
+/*MAIN PAGE*/
+.maincompany h1{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 170px;
+    font-size: 50px;
+}
+
 /* profile */
 
 .header{
