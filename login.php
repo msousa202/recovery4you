@@ -40,7 +40,11 @@
                 header("Location: indexUser.php");
             }
         } else{
+
             echo "<script>alert('Invalid Account')</script>";
+
+            header("Location: LoginPage.html");
+
         }
     }
 
