@@ -5,39 +5,41 @@
 
     if(isset($_POST['login'])){
 
-        $email = $_POST['email'];  
+        $user = $_POST['email'];  
         $password = $_POST['password'];  
         
-        $query = "SELECT * FROM registration WHERE email='$email' AND password='$password'";
+        $query = "SELECT * FROM registration WHERE email='$user' AND password='$password'";
 
         $result = mysqli_query($connection, $query);
 
         if(mysqli_num_rows($result) == 1){
             echo "<script>alert('You are good to go')</script>";
 
-            $role = "SELECT account FROM registration WHERE email='$email' AND password='$password'";
+            $role = "SELECT account FROM registration WHERE email='$user' AND password='$password'";
 
             $roles = mysqli_query($connection, $role);
 
             $row = mysqli_fetch_array($roles);
 
-            if($row['account'] == "enterprise"){
+            if($row['account'] == "enterprise" && $row['email']=$_SESSION['email']){
 
-                $_SESSION['enterprise'] = $email;
+                $_SESSION['email'] = $user;
 
-                header("Location: indexEnterprise.php");
+                header("Location: indexEnterprise.php?id=<php $user?>");
 
             } else if($row['account'] == "clinic"){
 
-                $_SESSION['clinic'] = $email;
+                $_SESSION['email'] = $user;
 
                 header("Location: indexClinic.php");
+                
 
             } else if($row['account'] == "user"){
 
-                $_SESSION['user'] = $email;
-
+                $_SESSION['email'] = $user;
+                
                 header("Location: indexUser.php");
+                
             }
         } else{
 

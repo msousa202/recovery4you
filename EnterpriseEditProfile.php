@@ -1,4 +1,18 @@
+<?php
 
+        include('config.php');
+
+        session_start();
+
+        $user = $_SESSION['email'];
+
+        $query ="SELECT * FROM `enterprise_information` WHERE emailCheck='$user'";
+
+        $result = mysqli_query($connection, $query);
+
+        $row = $result->fetch_assoc();
+        
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,9 +41,7 @@
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="EnterpriseAddEquipment.php">Add Equipment</a></li>
-                        <li><a href="EnterpriseContactPage.php">Contact Us</a></li>
-                        <li><a href="LoginPage.html">Log Out</a></li>
+                        <li><a href="indexEnterprise.php">Back</a></li>
                     </ul>
 
             </div>
@@ -38,26 +50,15 @@
 
         <?php
 
-        include('config.php');
 
-        session_start();
 
-        $user = $_SESSION['email'];
-
-        $query ="SELECT * FROM `enterprise_information` WHERE emailCheck='$user'";
-
-        $result = mysqli_query($connection, $query);
-
-        $row = $result->fetch_assoc();
-        
         ?>
 
         <div class="container">
             <div class="profile-box">
                 <img src="IMG/images/menu.png" class="menu-icon">
                 <img src="IMG/images/setting.png" class="setting-icon" onclick="toggleMenu()">
-
-                <img src="/ItemUpload/<?php echo $row['enterprise_image'];?>" class="profile-icon">
+                <img src="IMG/images/profile-pic.png" class="profile-icon">
                 <h3><?php echo $row['enterprise_name'];?></h3>
                 <p><i class="fa fa-phone-square"></i><?php echo $row['enterprise_contact'];?></p>
                 <p><i class="fa fa-envelope"></i><?php $user = $row['emailCheck']; print $user?></p>
@@ -70,58 +71,33 @@
                 
                         </div>
                     </div> 
-            </div>
+            </div> 
             <?php
-            $connection-> close();
-            ?> 
+            $connection->close();
+            ?>
+
             
-
-
             <div class="profile-box">
-                <h4>Enterprise Item List</h4>
+                <h4>Update your profile</h4>
                 <div class="items-display">
-                    <table class="table-items">
-                        <?php
-
-                        include('config.php');
-
-                        $query = "SELECT ItemName, ItemLink, ItemNumberClicks, ItemImage from `item list`";
+                    <form class="form-page-clinic-info" action="updateProfile.php" method="post">    
+                        <div class="form-group">
+                            <label>Enterprise Name:</label>
+                            <input type="text" name="enterpriseName" class="form-control" placeholder="Enterprise Name" value="<?php echo $row['enterprise_name'];?>">
+                        </div>
+                        <div class="form-group">
+                            <label>Enterprise Contact:</label>
+                            <input type="text" name="enterprisecontact" class="form-control" placeholder="Enterprise Contact" value="<?php echo $row['enterprise_contact'];?>">
+                        </div>
+                        <div class="form-group">
+                            <label>Enterprise Image:</label>
+                            <input type="file" name="enterpriseimage" class="form-control" value="<?php echo $row['enterprise_image'];?>" accept=".jpg, .jpeg, .png">
+                        </div>
                         
-                        $result = mysqli_query($connection, $query);
-
-                        if($result-> num_rows > 0){
-                            while($row = $result-> fetch_assoc()) {
-
-                                echo "
-                                <tr>
-                                    <th>Item Image</th>
-                                    <th>Item Name</th>
-                                    <th>Number of Item Clicks</th>
-                                    <th>Item Link</th>
-                                </tr>
-                                <tr>
-                                    <td>"
-                                    . $row["ItemImage"]
-                                    . "</td><td>"
-                                    . $row["ItemName"]
-                                    . "</td><td>"
-                                    . $row["ItemNumberClicks"]
-                                    . "</td><td><a href='"
-                                    . $row["ItemLink"] 
-                                    . "' class='linked-items'>Link</a></td>     
-                                <tr>";    
-                            }
-                            echo "</table>";
-                            
-                        }else{
-                            echo "0 result";
-                        }
-
-                        $connection-> close();
-
-                        
-                        ?>
-                    </table>
+                        <div class="form-group">
+                            <input type="submit" name="add" class="btn btn-info" value="Update">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
