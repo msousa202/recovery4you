@@ -4,16 +4,15 @@
 
         session_start();
 
-        $user = $_SESSION['enterprise'];
+        $user = $_SESSION['email'];
 
-
-        $query ="SELECT * FROM `enterprise_information`";
+        $query ="SELECT * FROM `enterprise_information` WHERE emailCheck='$user'";
 
         $result = mysqli_query($connection, $query);
 
         $row = $result->fetch_assoc();
         
-?>
+        ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,26 +41,51 @@
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="EnterpriseAddEquipment.php">Add Equipment</a></li>
+                        <li><a href="indexEnterprise.php">Profile Page</a></li>
                         <li><a href="EnterpriseContactPage.php">Contact Us</a></li>
                         <li><a href="LoginPage.html">Log Out</a></li>
                     </ul>
-
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
        
 
-        <div class="container">
-            <div class="profile-box">
-                
+        <div class="container">          
+            <div class="group-items">   
+                <form action="" method="POST">
+                    <div class="group-items-sub">
+                        <h3>Item Information:</h3><br>
+                        <div class="group-items-sub-novo">
+                            <h2>Item Name:</h2>
+                            <input type="text" required>
+                        </div>
+                        <div class="group-items-sub-novo">
+                            <h2>Item Link:</h2>
+                            <input type="url" required>
+                        </div>
+                        <div class="group-items-sub-novo">
+                            <h2>Item Category:</h2>
+                            <select id="cars" name="cars">
+                                <option value="">Choose Category</option>
+                                <option value="saab">UpperBody</option>
+                                <option value="fiat">LowerBody</option>
+                                <option value="audi">Both</option>
+                            </select>
+                        </div>
+                        <button type="submit" name="btn-add-item" value="Add Item">Add Item</button>
+                    </div>
+                    <div class="group-items-sub">
+                        <h3>Item Description:</h3><br>
+                        <textarea name="description" rows="8" cols="50%" required></textarea>
+                    </div>
+                    <div class="group-items-sub">
+                        <h3>Item Image:</h3><br>
+                        <img src="IMG/images/profile-pic.png" class="item-icon">
+                        <input type="file" name="item-photo">
+                    </div>
+                </form>       
             </div>
-           
-            
-
-
-
         </div>
 
             

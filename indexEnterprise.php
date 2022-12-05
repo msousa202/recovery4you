@@ -56,8 +56,7 @@
             <div class="profile-box">
                 <img src="IMG/images/menu.png" class="menu-icon">
                 <img src="IMG/images/setting.png" class="setting-icon" onclick="toggleMenu()">
-
-                <img src="/ItemUpload/<?php echo $row['enterprise_image'];?>" class="profile-icon">
+                <img src="IMG/images/profile-pic.png" class="profile-icon">
                 <h3><?php echo $row['enterprise_name'];?></h3>
                 <p><i class="fa fa-phone-square"></i><?php echo $row['enterprise_contact'];?></p>
                 <p><i class="fa fa-envelope"></i><?php $user = $row['emailCheck']; print $user?></p>

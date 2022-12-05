@@ -21,7 +21,7 @@
 
             $row = mysqli_fetch_array($roles);
 
-            if($row['account'] == "enterprise" && $row['email']=$_SESSION['email']){
+            if($row['account'] == "enterprise"){
 
                 $_SESSION['email'] = $user;
 

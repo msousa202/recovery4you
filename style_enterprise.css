@@ -101,6 +101,8 @@ nav .fa{
 }
 
 @media(max-width: 700px){
+
+
     .text-Box h1{
         font-size: 20px;
     }
@@ -185,6 +187,7 @@ nav .fa{
 .profile-icon{
     background: url('/IMG/images/profile-pic.png');
     width: 180px;
+    border: 2px solid #fff;
     border-radius: 50%;
     background: #fff;
 }
@@ -442,9 +445,125 @@ tr:nth-child(even){
 
 
 
+/* update profile */
+
+.items-display-update{
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+.form-page-enterprise-info{
+    padding: 5px;
+}
+
+label{
+    padding: 5px;
+}
 
 
+/* add equipments */
+
+.group-items{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.group-items h3{
+    margin-top: 5px;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    border-radius: 150px;
+}
+
+.group-items-sub{
+    width: 30%;
+    height: 450px;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.group-items-sub-novo{
+    position: relative;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.group-items h2{
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px;
+}
+
+button[type="submit"]{
+    border-radius: 20px;
+    margin-top: 15px;
+    border: 2px solid #fff;
+    padding: 10px 50px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
 
 
+textarea{
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 55px;
+}
 
+.item-icon{
+    width: 275px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 2px;
+    position: relative;
+    justify-content: center;
 
+}
+input[type=file] {
+    color: red;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+}
+
+/* Edit Profile */
+
+.form-group{
+    flex-direction: column;
+    margin: 10px;
+}
+
+.form-group h2{
+    font-size: 18px;
+    padding: 2px;
+    margin: 2px;
+}
+
+input[type=text]{
+    text-align: center;
+}
+
+@media(max-width: 700px){
+    input[type=file] {
+        width: 120px;
+        color: #444;
+        padding: 5px;
+        background: #fff;
+        border-radius: 10px;
+        border: 1px solid #555;
+    }
+}

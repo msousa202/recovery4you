@@ -18,3 +18,4 @@ if ($result){
     header("Location: indexEnterprise.php");
 
 }
+?>
